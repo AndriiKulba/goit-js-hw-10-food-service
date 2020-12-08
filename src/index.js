@@ -22,11 +22,11 @@ if (localStorage.getItem('activeTheme')) {
 function handleActiveTheme(e) {
   if (e.target.checked) {
     localStorage.setItem('activeTheme', Theme.DARK);
-    bodyRef.classList = localStorage.getItem('activeTheme');
+    bodyRef.classList = Theme.DARK;
     localStorage.setItem('checked', 'true');
   } else {
     localStorage.setItem('activeTheme', Theme.LIGHT);
-    bodyRef.classList = localStorage.getItem('activeTheme');
+    bodyRef.classList = Theme.LIGHT;
     localStorage.removeItem('checked');
   }
 }
